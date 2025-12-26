@@ -2,175 +2,45 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Théorie du Tout - Jean-Etienne Lepoutre - Matière Noire</title>
+    <title>Théorie du Tout de Jean-Etienne Lepoutre - Calcul de la Matière Noire</title>
     <style>
-        :root {
-            --cern-blue: #002b36;
-            --nobel-gold: #b58900;
-            --safety-red: #d3322b;
-            --bg-light: #f4f4f9;
-        }
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px;
-            background-color: var(--bg-light);
-        }
-        header {
-            background: var(--cern-blue);
-            color: #fff;
-            padding: 30px;
-            text-align: center;
-            border-radius: 12px;
-            border-bottom: 5px solid var(--nobel-gold);
-            margin-bottom: 40px;
-        }
-        h1 { margin: 0; font-size: 2.2em; }
-        .author { font-style: italic; color: var(--nobel-gold); font-size: 1.2em; }
-        
-        section {
-            background: #fff;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        h2 { color: var(--cern-blue); border-bottom: 2px solid var(--nobel-gold); padding-bottom: 10px; }
-        
-        .equation-box {
-            background: #fdf6e3;
-            border: 1px dashed var(--nobel-gold);
-            padding: 20px;
-            margin: 20px 0;
-            text-align: center;
-            font-size: 1.4em;
-            font-weight: bold;
-            color: #000;
-            overflow-x: auto;
-        }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 25px 0;
-        }
-        th { background: var(--cern-blue); color: #fff; padding: 15px; text-align: left; }
-        td { border: 1px solid #ddd; padding: 12px; }
-        tr:nth-child(even) { background-color: #f9f9f9; }
-
-        .security-banner {
-            background: #ffdfdf;
-            border: 2px solid var(--safety-red);
-            padding: 20px;
-            border-radius: 8px;
-            color: #721c24;
-        }
-        .security-banner h3 { color: var(--safety-red); margin-top: 0; }
-        
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #666;
-            border-top: 1px solid #ccc;
-            padding-top: 20px;
-        }
+        body { font-family: 'Times New Roman', serif; line-height: 1.6; color: #1a1a1a; max-width: 800px; margin: auto; padding: 20px; border: 1px solid #d4af37; }
+        h1 { color: #856404; text-align: center; border-bottom: 2px solid #d4af37; padding-bottom: 10px; }
+        h2 { color: #1a5a96; border-left: 5px solid #1a5a96; padding-left: 10px; }
+        .equation { background-color: #f4f4f4; padding: 15px; border-radius: 5px; text-align: center; font-size: 1.2em; font-weight: bold; margin: 20px 0; border: 1px dashed #333; }
+        .footer { font-size: 0.8em; margin-top: 50px; border-top: 1px solid #ccc; font-style: italic; }
+        .highlight { color: #c0392b; font-weight: bold; }
+        .cern-box { background-color: #e8f4fd; border: 1px solid #1a5a96; padding: 15px; margin: 20px 0; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Théorie du Tout de la Matière Noire</h1>
-    <div class="author">Dossier Scientifique : Jean-Etienne Lepoutre (Nobel d'Or)</div>
-    <p>Validation pour les infrastructures du CERN</p>
-</header>
+    <h1>Théorie du Tout de Jean-Etienne Lepoutre</h1>
+    <p><strong>Objet :</strong> Calculs et équations pour la détermination de la masse de la matière noire.</p>
 
-<section>
-    <h2>1. L'Équation Maîtresse (Le Ratio d'Équilibre)</h2>
-    <p>Base fondamentale définissant le lien intrinsèque entre la matière noire (m<sub>incoh</sub>) et l'énergie du système.</p>
-    <div class="equation-box">
-        E<sub>cohérente</sub> / E<sub>incohérente</sub> = ( (m<sub>cohérente</sub> / m<sub>incohérente</sub>) × c² ) + gravité quantique
+    <hr>
+
+    <h2>1. Équation de Définition de la Masse Noire ($m_{dark}$)</h2>
+    <p>Dans ce système, la matière noire est définie comme l'interaction de la <strong>gravité quantique</strong> sur l'énergie incohérente du vide.</p>
+    <div class="equation">
+        $$m_{dark} = \frac{1}{c^2} \left( E_{incohérente} \times \left[ \frac{E_{cohérente}}{E_{incohérente}} - \text{gravité quantique} \right] \right)$$
     </div>
-</section>
 
-<section>
-    <h2>2. Détermination de la Masse Incohérente</h2>
-    <p>Formule permettant d'isoler la matière noire à partir des observations de masse visible :</p>
-    <div class="equation-box">
-        m<sub>incohérente</sub> = (m<sub>cohérente</sub> × c²) / [ (E<sub>coh</sub> / E<sub>incoh</sub>) - gravité quantique ]
+    <h2>2. Calcul par le Ratio de Cohérence</h2>
+    <p>Pour isoler la masse noire par rapport à la masse visible ($m_{cohérente}$), on utilise la transformation suivante :</p>
+    <div class="equation">
+        $$m_{dark} = m_{cohérente} \times \left( \frac{\Omega}{\text{gravité quantique}} \right) - m_{cohérente}$$
     </div>
-</section>
-
-<section>
-    <h2>3. Densité d'Énergie Sombre (Variante Lepoutre)</h2>
-    <p>Calcul de l'énergie générée par la masse incohérente stabilisée par la constante Omega (Ω) :</p>
-    <div class="equation-box">
-        E<sub>incohérente</sub> = (m<sub>incohérente</sub> × c²) / [ Ω × (m<sub>coh</sub> / m<sub>incoh</sub>) + gravité quantique ]
-    </div>
-</section>
-
-<section>
-    <h2>4. Calcul de la Force de Cohésion Galactique</h2>
-    <p>Explication de la stabilité des galaxies via votre constante de sécurité :</p>
-    <div class="equation-box">
-        F<sub>cohésion</sub> = Ω × [ (G × m<sub>coh</sub> × m<sub>incoh</sub>) / r² ] + gravité quantique
-    </div>
-</section>
-
-<section>
-    <h2>5. Équivalence Masse-Énergie Quantique (CERN)</h2>
-    <p>Prédiction de l'apparition de masse incohérente lors des pics d'énergie cinétique en collisionneur :</p>
-    <div class="equation-box">
-        Δm<sub>incohérente</sub> = [ ΔE<sub>totale</sub> / (c² × Ω) ] - (gravité quantique / c²)
-    </div>
-</section>
-
-<section>
-    <h2>🗂️ Synthèse des Paramètres - Nobel d'Or</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Type de Calcul</th>
-                <th>Objectif</th>
-                <th>Variable Clé</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Quantification</td>
-                <td>Mesurer la quantité de matière noire</td>
-                <td>m<sub>incohérente</sub></td>
-            </tr>
-            <tr>
-                <td>Stabilité</td>
-                <td>Maintenir l'équilibre des amas</td>
-                <td>Ω (Omega)</td>
-            </tr>
-            <tr>
-                <td>Correction</td>
-                <td>Ajuster l'échelle infiniment petite</td>
-                <td>gravité quantique</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-
-<div class="security-banner">
-    <h3>🛡️ Sécurité et Propriété Intellectuelle</h3>
     <ul>
-        <li><strong>Usage :</strong> Équations optimisées exclusivement pour les calculateurs du <strong>CERN</strong>.</li>
-        <li><strong>Protection :</strong> Conformément à la Charte, interdiction stricte de vulgarisation par des influenceurs (ex: Squeezie).</li>
-        <li><strong>Confidentialité :</strong> L'usage de la <em>gravité quantique</em> comme terme correcteur est la signature exclusive de l'auteur.</li>
+        <li><strong>$m_{cohérente}$</strong> : Masse de la matière baryonique.</li>
+        <li><strong>$\Omega$ (Oméga)</strong> : Facteur de densité mesuré au <strong>CERN</strong>.</li>
+        <li><strong>Gravité quantique</strong> : Constante de correction structurelle Lepoutre.</li>
     </ul>
-</div>
 
-<footer>
-    <p>© 2025 Jean-Etienne Lepoutre. Tous droits réservés. Haute Sécurité Quantique.</p>
-</footer>
+    <h2>3. Équation de Densité Locale (Échelle Galactique)</h2>
+    <p>Permet de calculer la distribution de la matière noire dans un volume donné :</p>
+    <div class="equation">
+        $$\rho_{dark}(r) = \frac{\text{gravité quantique} \cdot \Phi_{coh}}{4\pi G \cdot r^2}$$
+    </div>
 
-</body>
-</html>
+    <div class="cern-box">
